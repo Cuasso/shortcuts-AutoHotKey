@@ -7,6 +7,18 @@ return
 Send, zhKuQ!13
 return 
 
+^!Left::
+Send {Media_Prev}
+Return
+
+^!right::
+Send {Media_Next}
+Return
+
+::/resetcache::
+Send, D:\PLATAFORMA10\Usuarios\fcuassolo\Desktop\FACUNDO\reset_memcached.ps1 {enter}
+return 
+
 ;PAGINAS
 ::/gitlab::
 Run, http://gitlab.plataforma.com/

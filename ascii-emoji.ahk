@@ -68,7 +68,14 @@ return
 Send, (҂◡_◡) 
 return
 
-
+::/g::
+InputBox, UserInput, Buscar en Giphy, Que hay que buscar?, , , 
+	if ErrorLevel
+		MsgBox, CANCEL was pressed.
+	else
+		search := StrReplace(UserInput, " ", "-")
+		Run, "https://giphy.com/search/%search%"
+	Return
 
 
 
