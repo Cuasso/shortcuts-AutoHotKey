@@ -4,7 +4,7 @@
 return 
 
 ::/pass::
-Send, zhKuQ!13
+Send, {Text}zhKuQ!13
 return 
 
 ^!Left::
