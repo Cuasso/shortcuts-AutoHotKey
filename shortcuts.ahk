@@ -3,20 +3,16 @@
  Run D:\PLATAFORMA10\Usuarios\fcuassolo\Desktop\FACUNDO\programas\cmder\Cmder.exe  /Single "d:\P10\Desarrollo"
 return 
 
-::/pass::
-Send, {Text}zhKuQ!13
+^!d::
+ Run D:\P10\Desarrollo 
 return 
 
-^!Left::
-Send {Media_Prev}
-Return
+::/comp::
+Send, prun.bat comp.py {Right 1}
+return 
 
-^!right::
-Send {Media_Next}
-Return
-
-::/resetcache::
-Send, D:\PLATAFORMA10\Usuarios\fcuassolo\Desktop\FACUNDO\reset_memcached.ps1 {enter}
+::/pass::
+Send, {Text}zhKuQ!13
 return 
 
 ;PAGINAS
@@ -25,11 +21,15 @@ Run, http://gitlab.plataforma.com/
 return
 
 ::/jira::
-Run, https://plataforma10.atlassian.net/secure/RapidBoard.jspa?projectKey=BUS&rapidView=3
+Run, https://plataforma10.atlassian.net/secure/RapidBoard.jspa?projectKey=PCOM&rapidView=3
 return
 
 ::/asana::
 Run, https://app.asana.com/0/1859560842186/list
+return 
+
+::/mail::
+Send, {Text}facundo.cuassolo@plataforma10.com
 return 
 
 ; COMANDO GIT
